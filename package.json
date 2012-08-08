@@ -1,0 +1,11 @@
+{
+    "name": "node-mysql"
+  , "version": "0.0.1"
+  , "private": true
+  , "homepage": "http://node-mysql.nodester.com"
+  , "node": "0.8.1"
+  , "dependencies": {
+      "express": "3.0.0rc2",
+	  "mysql": "*"
+  }
+}
