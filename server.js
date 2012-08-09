@@ -88,7 +88,15 @@ app.get('/', function(req, res){
 	
 	    console.log(results);
 	    console.log(fields);
-	  	res.send(JSON.stringify(results));
+	
+	  	// res.send(JSON.stringify(results));
+		
+		var i, recdata, titlestring="";
+		for (i = 0; i < results.length; i++){
+			titlestring += results[i].title + ', '
+		}
+		res.send(titlestring)
+		
 	    // client.end();
 	  }
 	);	
